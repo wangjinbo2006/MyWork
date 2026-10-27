@@ -1,0 +1,470 @@
+
+*** Running vivado
+    with args -log lab2_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab2_top.tcl
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Thu Oct 15 19:15:44 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source lab2_top.tcl -notrace
+Command: synth_design -top lab2_top -part xc7a100tfgg676-2L
+Starting synth_design
+WARNING: [Vivado_Tcl 4-391] The following IPs are missing output products for Synthesis target. These output products could be required for synthesis, please generate the output products using the generate_target or synth_ip command before running synth_design.
+/home/gitlab-runner/builds/1NG-DIKhD/0/cod-ta/cod26/cod26-2024012103/thinpad_top.srcs/sources_1/ip/pll_example/pll_example.xci
+
+WARNING: [Vivado_Tcl 4-391] The following IPs are missing output products for Implementation target. These output products could be required for synthesis, please generate the output products using the generate_target or synth_ip command before running synth_design.
+/home/gitlab-runner/builds/1NG-DIKhD/0/cod-ta/cod26/cod26-2024012103/thinpad_top.srcs/sources_1/ip/pll_example/pll_example.xci
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1950529
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2015.703 ; gain = 426.859 ; free physical = 97960 ; free virtual = 233940
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11065] parameter 'MAX_POLY_TABLE' becomes localparam in 'lfsr_prng' with formal parameter declaration list [/home/gitlab-runner/builds/1NG-DIKhD/0/cod-ta/cod26/cod26-2024012103/thinpad_top.srcs/sources_1/new/common/lfsr_prng.sv:71]
+WARNING: [Synth 8-11065] parameter 'STYLE_INT' becomes localparam in 'lfsr' with formal parameter declaration list [/home/gitlab-runner/builds/1NG-DIKhD/0/cod-ta/cod26/cod26-2024012103/thinpad_top.srcs/sources_1/new/common/lfsr.v:364]
+INFO: [Synth 8-6157] synthesizing module 'lab2_top' [/home/gitlab-runner/builds/1NG-DIKhD/0/cod-ta/cod26/cod26-2024012103/thinpad_top.srcs/sources_1/new/lab2/lab2_top.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'button_trigger' [/home/gitlab-runner/builds/1NG-DIKhD/0/cod-ta/cod26/cod26-2024012103/thinpad_top.srcs/sources_1/new/common/button_trigger.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'button_trigger' (0#1) [/home/gitlab-runner/builds/1NG-DIKhD/0/cod-ta/cod26/cod26-2024012103/thinpad_top.srcs/sources_1/new/common/button_trigger.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [/home/gitlab-runner/builds/1NG-DIKhD/0/cod-ta/cod26/cod26-2024012103/thinpad_top.srcs/sources_1/new/lab2/regfile.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [/home/gitlab-runner/builds/1NG-DIKhD/0/cod-ta/cod26/cod26-2024012103/thinpad_top.srcs/sources_1/new/lab2/regfile.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'alu' [/home/gitlab-runner/builds/1NG-DIKhD/0/cod-ta/cod26/cod26-2024012103/thinpad_top.srcs/sources_1/new/lab2/alu.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [/home/gitlab-runner/builds/1NG-DIKhD/0/cod-ta/cod26/cod26-2024012103/thinpad_top.srcs/sources_1/new/lab2/alu.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'controller' [/home/gitlab-runner/builds/1NG-DIKhD/0/cod-ta/cod26/cod26-2024012103/thinpad_top.srcs/sources_1/new/lab2/controller.sv:4]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/gitlab-runner/builds/1NG-DIKhD/0/cod-ta/cod26/cod26-2024012103/thinpad_top.srcs/sources_1/new/lab2/controller.sv:50]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [/home/gitlab-runner/builds/1NG-DIKhD/0/cod-ta/cod26/cod26-2024012103/thinpad_top.srcs/sources_1/new/lab2/controller.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'lab2_top' (0#1) [/home/gitlab-runner/builds/1NG-DIKhD/0/cod-ta/cod26/cod26-2024012103/thinpad_top.srcs/sources_1/new/lab2/lab2_top.sv:4]
+WARNING: [Synth 8-3917] design lab2_top has port dpy0[7] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port dpy0[6] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port dpy0[5] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port dpy0[4] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port dpy0[3] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port dpy0[2] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port dpy0[1] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port dpy0[0] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port dpy1[7] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port dpy1[6] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port dpy1[5] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port dpy1[4] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port dpy1[3] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port dpy1[2] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port dpy1[1] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port dpy1[0] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port uart_rdn driven by constant 1
+WARNING: [Synth 8-3917] design lab2_top has port uart_wrn driven by constant 1
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_addr[19] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_addr[18] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_addr[17] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_addr[16] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_addr[15] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_addr[14] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_addr[13] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_addr[12] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_addr[11] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_addr[10] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_addr[9] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_addr[8] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_addr[7] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_addr[6] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_addr[5] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_addr[4] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_addr[3] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_addr[2] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_addr[1] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_addr[0] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_be_n[3] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_be_n[2] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_be_n[1] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_be_n[0] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_ce_n driven by constant 1
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_oe_n driven by constant 1
+WARNING: [Synth 8-3917] design lab2_top has port base_ram_we_n driven by constant 1
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_addr[19] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_addr[18] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_addr[17] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_addr[16] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_addr[15] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_addr[14] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_addr[13] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_addr[12] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_addr[11] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_addr[10] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_addr[9] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_addr[8] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_addr[7] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_addr[6] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_addr[5] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_addr[4] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_addr[3] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_addr[2] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_addr[1] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_addr[0] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_be_n[3] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_be_n[2] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_be_n[1] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_be_n[0] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_ce_n driven by constant 1
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_oe_n driven by constant 1
+WARNING: [Synth 8-3917] design lab2_top has port ext_ram_we_n driven by constant 1
+WARNING: [Synth 8-3917] design lab2_top has port txd driven by constant 1
+WARNING: [Synth 8-3917] design lab2_top has port flash_a[22] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_a[21] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_a[20] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_a[19] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_a[18] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_a[17] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_a[16] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_a[15] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_a[14] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_a[13] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_a[12] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_a[11] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_a[10] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_a[9] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_a[8] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_a[7] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_a[6] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_a[5] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_a[4] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_a[3] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_a[2] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_a[1] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_a[0] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_rp_n driven by constant 1
+WARNING: [Synth 8-3917] design lab2_top has port flash_vpen driven by constant 0
+WARNING: [Synth 8-3917] design lab2_top has port flash_ce_n driven by constant 1
+WARNING: [Synth 8-3917] design lab2_top has port flash_oe_n driven by constant 1
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7129] Port base_ram_data[31] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[30] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[29] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[28] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[27] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[26] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[25] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[24] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[23] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[22] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[21] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[20] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[19] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[18] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[17] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[16] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[15] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[14] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[13] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[12] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[11] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[10] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[9] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[8] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[7] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[6] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[5] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[4] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[3] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[2] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[1] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_ram_data[0] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[31] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[30] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[29] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[28] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[27] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[26] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[25] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[24] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[23] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[22] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[21] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[20] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[19] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[18] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[17] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[16] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[15] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[14] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[13] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[12] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[11] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[10] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[9] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[8] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[7] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[6] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[5] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[4] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[3] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[2] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[1] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_ram_data[0] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_d[15] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_d[14] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_d[13] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_d[12] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_d[11] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_d[10] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_d[9] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_d[8] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_d[7] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_d[6] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_d[5] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_d[4] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_d[3] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_d[2] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_d[1] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flash_d[0] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dm9k_sd[15] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dm9k_sd[14] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dm9k_sd[13] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dm9k_sd[12] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dm9k_sd[11] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dm9k_sd[10] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dm9k_sd[9] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dm9k_sd[8] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dm9k_sd[7] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dm9k_sd[6] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dm9k_sd[5] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dm9k_sd[4] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dm9k_sd[3] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dm9k_sd[2] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dm9k_sd[1] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dm9k_sd[0] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_11M0592 in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_btn[3] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_btn[2] in module lab2_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_btn[1] in module lab2_top is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2089.641 ; gain = 500.797 ; free physical = 97882 ; free virtual = 233862
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2107.453 ; gain = 518.609 ; free physical = 97874 ; free virtual = 233854
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2107.453 ; gain = 518.609 ; free physical = 97874 ; free virtual = 233854
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2107.453 ; gain = 0.000 ; free physical = 97874 ; free virtual = 233854
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/gitlab-runner/builds/1NG-DIKhD/0/cod-ta/cod26/cod26-2024012103/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc]
+WARNING: [Vivado 12-507] No nets matched 'push_btn_IBUF'. [/home/gitlab-runner/builds/1NG-DIKhD/0/cod-ta/cod26/cod26-2024012103/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gitlab-runner/builds/1NG-DIKhD/0/cod-ta/cod26/cod26-2024012103/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'reset_btn_IBUF'. [/home/gitlab-runner/builds/1NG-DIKhD/0/cod-ta/cod26/cod26-2024012103/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gitlab-runner/builds/1NG-DIKhD/0/cod-ta/cod26/cod26-2024012103/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/gitlab-runner/builds/1NG-DIKhD/0/cod-ta/cod26/cod26-2024012103/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/gitlab-runner/builds/1NG-DIKhD/0/cod-ta/cod26/cod26-2024012103/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab2_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/lab2_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2254.203 ; gain = 0.000 ; free physical = 97799 ; free virtual = 233779
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2254.203 ; gain = 0.000 ; free physical = 97799 ; free virtual = 233779
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2254.203 ; gain = 665.359 ; free physical = 97792 ; free virtual = 233772
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg676-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2262.207 ; gain = 673.363 ; free physical = 97792 ; free virtual = 233772
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2262.207 ; gain = 673.363 ; free physical = 97792 ; free virtual = 233772
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_INIT |                              000 |                              000
+               ST_DECODE |                              001 |                              001
+                 ST_CALC |                              010 |                              010
+            ST_WRITE_REG |                              011 |                              011
+             ST_READ_REG |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2262.207 ; gain = 673.363 ; free physical = 97795 ; free virtual = 233775
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   3 Input   16 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 32    
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 36    
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2262.207 ; gain = 673.363 ; free physical = 97796 ; free virtual = 233776
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2276.207 ; gain = 687.363 ; free physical = 97786 ; free virtual = 233766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2361.387 ; gain = 772.543 ; free physical = 97723 ; free virtual = 233703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2361.387 ; gain = 772.543 ; free physical = 97724 ; free virtual = 233704
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2466.199 ; gain = 877.355 ; free physical = 97622 ; free virtual = 233602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2466.199 ; gain = 877.355 ; free physical = 97622 ; free virtual = 233602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2466.199 ; gain = 877.355 ; free physical = 97622 ; free virtual = 233602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2466.199 ; gain = 877.355 ; free physical = 97622 ; free virtual = 233602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2466.199 ; gain = 877.355 ; free physical = 97622 ; free virtual = 233602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2466.199 ; gain = 877.355 ; free physical = 97622 ; free virtual = 233602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT2   |    34|
+|4     |LUT3   |    24|
+|5     |LUT4   |    23|
+|6     |LUT5   |    90|
+|7     |LUT6   |   464|
+|8     |MUXF7  |   132|
+|9     |MUXF8  |    10|
+|10    |FDRE   |   547|
+|11    |IBUF   |    32|
+|12    |OBUF   |   141|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2466.199 ; gain = 877.355 ; free physical = 97622 ; free virtual = 233602
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 234 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2466.199 ; gain = 730.605 ; free physical = 97622 ; free virtual = 233602
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2466.207 ; gain = 877.355 ; free physical = 97622 ; free virtual = 233602
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2466.207 ; gain = 0.000 ; free physical = 97781 ; free virtual = 233761
+INFO: [Netlist 29-17] Analyzing 150 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2522.227 ; gain = 0.000 ; free physical = 97788 ; free virtual = 233768
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 1096e41
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 207 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 2522.227 ; gain = 948.324 ; free physical = 97788 ; free virtual = 233768
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1560.290; main = 1545.986; forked = 241.142
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3188.734; main = 2522.230; forked = 926.523
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2546.238 ; gain = 0.000 ; free physical = 97788 ; free virtual = 233768
+INFO: [Common 17-1381] The checkpoint '/home/gitlab-runner/builds/1NG-DIKhD/0/cod-ta/cod26/cod26-2024012103/thinpad_top.runs/synth_1/lab2_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file lab2_top_utilization_synth.rpt -pb lab2_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 15 19:16:08 2026...

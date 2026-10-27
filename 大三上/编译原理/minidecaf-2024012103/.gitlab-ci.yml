@@ -1,0 +1,8 @@
+image: crpi-06dpm07ux75tzwww.cn-beijing.personal.cr.aliyuncs.com/minidecaf26a/minidecaf-tests:2026autumn
+
+test:
+  script:
+    - bash ./prepare.sh
+    - if [ -d 'minidecaf-tests' ]; then rm -r minidecaf-tests; fi
+    - git clone "https://oauth2:${FULL_TEST_ACCESS_TOKEN}@git.tsinghua.edu.cn/compiler26autumn/minidecaf-full-tests.git" minidecaf-tests
+    - cd ./minidecaf-tests && PROJ_PATH=.. USE_PARALLEL=false ./check.sh
